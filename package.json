@@ -8,14 +8,15 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "start": "npm run dev",
-    "dev": "set NODE_ENV=development && webpack-dev-server -d --color --inline --inline",
+    "dev": "set NODE_ENV=development && webpack-dev-server -d --color --inline",
     "build": "set NODE_ENV=production && webpack --colors  --hot",
     "test": "jest"
   },
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.0-beta.6",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
@@ -25,7 +26,7 @@
     "webpack": "^4.6.0"
   },
   "devDependencies": {
-    "babel-preset-stage-1": "^6.24.1",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
     "happypack": "^5.0.0",
     "source-map-loader": "^0.2.4",
     "uglifyjs-webpack-plugin": "^1.3.0",
