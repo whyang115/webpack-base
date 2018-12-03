@@ -41,12 +41,12 @@ module.exports = {
         enforce: "pre"
       },
       {
-        test: /\.jsx?/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: "babel-loader"
       },
       {
-        test: /\.css/,
+        test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: ["css-loader"]
